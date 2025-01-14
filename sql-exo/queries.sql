@@ -32,9 +32,35 @@
 # LIMIT 2
 
 # 7
+# INSERT INTO students (nom, prenom, datenaissance, genre, school)
+# VALUES ('Ginette', 'Dalor', 19300101, 'F', 1);
+#
+# SELECT *
+# FROM students
+# WHERE prenom = 'Dalor';
 
 # 8
+# UPDATE students
+# SET prenom = 'Omer',
+#     genre  = 'M'
+# WHERE prenom = 'Dalor';
+#
+# SELECT *
+# FROM students
+# WHERE nom = 'Ginette';
 
 # 9
+# DELETE
+# FROM students
+# WHERE idStudent = 3
 
 # 10
+# UPDATE school
+# SET school = CASE
+#                  WHEN idschool = 1 THEN 'Liege'
+#                  WHEN idschool = 2 THEN 'Gent'
+#     END
+# WHERE idschool IN (1, 2);
+#
+# SELECT *
+# FROM school;
